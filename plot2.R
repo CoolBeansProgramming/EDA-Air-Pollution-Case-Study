@@ -11,8 +11,8 @@ SCC <-readRDS("Source_Classification_Code.rds")
 baltimore <-NEI[NEI$fips=="24510", ]
 aggSumYearBalt <-aggregate(Emissions~year, baltimore, sum)
 
-# create and save boxplot 
+# create plot
 png('plot2.png')
-barplot(height = aggSumYearBalt$Emissions, names.arg = aggSumYearBalt$year, xlab="Year", ylab="Total Emissions", main="Total PM2.5 emissions in Baltimore City, MD from 1999-2008")
+barplot(height = aggSumYearBalt$Emissions, names.arg = aggSumYearBalt$year, xlab="Year", ylab="Total PM2.5 Emissions", main="Total PM2.5 emissions in Baltimore City, MD from 1999-2008")
 dev.off()
 
