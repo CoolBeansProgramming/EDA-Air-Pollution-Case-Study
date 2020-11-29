@@ -25,5 +25,6 @@ You must address the following questions and tasks in your exploratory analysis.
     
 6) Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California. Which city has seen greater changes over time in motor vehicle emissions?
 
+The overall goal is to explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United states over the 10-year period 1999–2008.
 
 This project also includes a `CodeBook.md` describing the variables and any transformations made. 
