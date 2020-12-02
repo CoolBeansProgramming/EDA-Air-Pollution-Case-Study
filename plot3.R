@@ -7,6 +7,8 @@ unzip(zipfile="air.zip")
 NEI <-readRDS("summarySCC_PM25.rds")
 SCC <-readRDS("Source_Classification_Code.rds")
 
+library(ggplot2)
+
 # subset emissions data for Balitmore only
 baltimore <-NEI[NEI$fips=="24510", ]
 

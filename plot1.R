@@ -12,5 +12,5 @@ aggregatedSumYear <- aggregate(Emissions~year, data=NEI, FUN=sum)
 
 # create plot 
 png('plot1.png')
-barplot(height = aggregatedSumYear$Emissions, names.arg=aggregatedSumYear$year, xlab="Year", ylab="Total PM2.5 Emissions", main="Total PM2.5 emissions from 1999-2008")
+barplot(height = aggregatedSumYear$Emissions, names.arg=aggregatedSumYear$year, xlab="Year", ylab="Total PM2.5 Emissions", main="Total PM2.5 Emissions from 1999-2008")
 dev.off()
